@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('/fonts/Gotham-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.view {
+  width: 100%;
+  max-width: 380px;
+  height: 480px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Gotham Book';
+
+}
+
+.header {
+  height: 60px;
+  background-color: #ffc550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  flex: 1;
+  background-image: url('/images/model.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -60px;
+  position: relative;
+}
+
+.main > img{
+  position: absolute;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.image-2 {
+  right: 0px; 
+}
+
+.image-3 {
+  right: 0px;
+  top: 30%; 
+}
+
+.image-4 {
+  right: 0px;
+  top: 40%; 
+}
+
+.watermark {
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  width: 100%;
+  color: white;
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+.product-config {
+  background-color: #fff;
+  width: 100%;
+  height: 28%;
+  position: absolute;
+  bottom: 45px;
+  display: flex;
+}
+
+.product-image {
+  flex: 3;
+}
+
+.product-image > img {
+  padding-top: 10px;
+}
+
+.product-info {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-more-info {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.product-info-name {
+  flex: 7;
+  font-size: 14px;
+  width: 60%;
+}
+
+.more-info {
+  flex: 4;
+  background-color: #ffa500;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.shade-name {
+  flex: 1;
+  font-size: 11px;
+  color: rgb(170, 170, 170);
+}
+
+.colorball-holder {
+  flex: 4;
+  display: flex;
+  overflow: hidden;
+}
+
+/* .horizontal-scroll {
+  width: 277px;
+  overflow-x: scroll;
+  white-space: nowrap;
+} */
+
+.horizontal-scroll {
+  width: 277px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 6px;
+  overflow-x: auto;
+}
+
+/* .horizontal-scroll::-webkit-scrollbar {
+  opacity: 0.5; 
+}
+
+.horizontal-scroll:hover::-webkit-scrollbar {
+  opacity: 1;
+} */
+
+.no-color {
+    width: 28px;
+    height: 26px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.colorball {
+  /* display: inline-block; */
+  flex: 0 0 auto;
+  width: 26px;
+  height: 24px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+  transform: rotate(90deg);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorball-1 {
+  width: 26px;
+  height: 24px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(90deg);
+  box-sizing: border-box;
+}
+  
+
+.pull-up {
+  background-color: #fff;
+  box-shadow: rgb(237, 237, 237) 0px -5px 5px;
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+

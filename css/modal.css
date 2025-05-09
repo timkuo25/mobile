@@ -1,0 +1,64 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-info-modal {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.modal-header {
+  position: relative;
+  height: 40px;
+}
+
+.modal-header > div{
+  position: absolute;  
+  top: 20px;
+  left: 50%;
+  translate: -50%;
+  font-size: 16px;
+}
+
+.modal-header > img{
+  position: absolute;
+  right: 10px;
+  top: 50%;  
+  translate: 0% -50% ;
+  cursor: pointer;
+}
+
+
+.model-display-product {
+  padding: 10px;
+  display: flex;
+}
+.model-display-product > img {
+  cursor: default;
+}
+
+.model-product-name {
+  font-size: 15px;
+}
+
+.model-num-shades {
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  margin-top: 5px
+}
+
+.model-product-description {
+  padding: 0px 10px;
+  line-height: 1.5;
+  font-size: 14px;
+  overflow: auto;
+}

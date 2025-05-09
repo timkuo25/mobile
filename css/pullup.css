@@ -1,0 +1,69 @@
+.pull-up-panel {
+  padding: 10px;
+  height: 80%;
+
+}
+
+.pull-up-header {
+  position: relative;
+  height: 40px;
+}
+
+.pull-up-header > div{
+  position: absolute;  
+  top: 10px;
+  left: 50%;
+  translate: -50%;
+  font-family: 'Gotham Book';
+}
+
+.pull-up-header > img{
+  position: absolute;
+  right: 10px;
+  top: 50%;  
+  translate: 0% -50% ;
+  cursor: pointer;
+}
+
+.show-card {
+  width: 100%;
+  height: 85%;
+  overflow: auto;
+}
+
+.card-holder {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.card {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-shade-name{
+  font-size: 11px;
+  position: absolute;
+  bottom: 20%;
+  color: #666666;
+}
+
+.try-on{
+  width: 80%;
+  height: 33px;
+  background-color: #FFC550;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
