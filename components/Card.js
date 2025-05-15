@@ -15,7 +15,7 @@ const Card = ({ prodName, color, setPanelOpen, setSelectedProd, setSelectedCol }
         height={130}
         alt='product'
       />
-      <div>{prodName}</div>
+      <div className='prod-name'>{prodName}</div>
       <div className='card-shade-name'>{ color.name }</div>
       <div className='try-on' onClick={handleTryOn}>TRY ON</div>
     </div>

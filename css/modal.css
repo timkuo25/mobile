@@ -14,6 +14,7 @@
   right: 0;
   bottom: 0;
   background-color: white;
+  padding: 0px 10px;
 }
 
 .modal-header {
@@ -23,7 +24,7 @@
 
 .modal-header > div{
   position: absolute;  
-  top: 20px;
+  top: 16px;
   left: 50%;
   translate: -50%;
   font-size: 16px;
@@ -32,33 +33,35 @@
 .modal-header > img{
   position: absolute;
   right: 10px;
-  top: 50%;  
+  top: 60%;  
   translate: 0% -50% ;
   cursor: pointer;
 }
 
 
-.model-display-product {
+.modal-display-product {
   padding: 10px;
   display: flex;
+  position: relative;
 }
-.model-display-product > img {
+.modal-display-product > img {
   cursor: default;
+
 }
 
-.model-product-name {
-  font-size: 15px;
+.modal-product-name {
+  font-size: 14px;
 }
 
-.model-num-shades {
-  font-size: 12px;
+.modal-num-shades {
+  font-size: 11px;
   color: rgb(170, 170, 170);
   margin-top: 5px
 }
 
-.model-product-description {
+.modal-product-description {
   padding: 0px 10px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 13px;
   overflow: auto;
 }

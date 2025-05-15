@@ -202,6 +202,7 @@ const getColorsByProd = displayName => {
   return [];
 }
 
+// for react-select
 let groupedOptions = data.map(item => ({
   label: item.group,
   options: item.products.map(item => ({
@@ -210,7 +211,10 @@ let groupedOptions = data.map(item => ({
   }))
 }));
 
-groupedOptions = [{ value: 'All Products', label: 'All Products' }, ...groupedOptions];
+groupedOptions = [{ 
+  value: 'All Products', 
+  label: 'All Products' 
+}, ...groupedOptions]; 
 
 const getAllProducts = () => {
   return data.flatMap(group => group.products);

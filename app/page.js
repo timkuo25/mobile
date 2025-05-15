@@ -7,8 +7,8 @@ import { useState } from 'react';
 import { getColorsByProd } from '@/public/data';
 
 const Home = () => {
-  const [selectedProd, setSelectedProd] = useState('Tinted Lip Balm');
   const [selectingProd, setSelectingProd] = useState('All Products');
+  const [selectedProd, setSelectedProd] = useState('Tinted Lip Balm');
   const [selectedCol, setSelectedCol] = useState({ name : 'ROSE', hex: '#cf544d' });
   const [panelOpen, setPanelOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);

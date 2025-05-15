@@ -18,19 +18,19 @@ const Modal = ({ setModalOpen, length, name, description }) => {
             onClick={() => setModalOpen(false)}
           />
         </header>
-        <div className='model-display-product'>
+        <div className='modal-display-product'>
           <Image
             src='/images/product.jpg'
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             alt='product'
           />
-          <div className='model-product-info'>
-            <div className='model-product-name'>{name}</div>
-            <div className='model-num-shades'>{length} shades</div>
+          <div className='modal-product-info'>
+            <div className='modal-product-name'>{name}</div>
+            <div className='modal-num-shades'>{length} shades</div>
           </div>
         </div>
-        <div className='model-product-description'>
+        <div className='modal-product-description'>
           {description}
         </div>
       </div>

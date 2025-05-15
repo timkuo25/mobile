@@ -9,21 +9,21 @@ const Main = ({ selectedProd, selectedCol, modalOpen, setModalOpen, setPanelOpen
 
   return (
     <div className='main'>
-      <Image className='image-1' src={'/images/1.png'} width={35} height={35} alt='1'/>
-      <Image className='image-2' src={'/images/2.png'} width={35} height={35} alt='2'/>
-      <Image className='image-3' src={'/images/3.png'} width={35} height={35} alt='3'/>
+      <Image className='image-return' src={'/images/return.png'} width={35} height={35} alt='return'/>
+      <Image className='image-X' src={'/images/X.png'} width={35} height={35} alt='X'/>
+      <Image className='image-reset' src={'/images/reset.png'} width={35} height={35} alt='reset'/>
       <Image 
-        className='image-4'
-        src={'/images/4.png'}
+        className='image-compare'
+        src={'/images/compare.png'}
         width={35}
         height={35}
-        alt='4'
+        alt='compare'
         style={selectedCol.name === '' ? { opacity: '0.5', cursor: 'not-allowed'} : {}}
       />
       <div className='watermark'>Powered by YouCam Makeup</div>
       <div className='product-config'>
         <div className='product-image'>
-          <Image src={'/images/product.jpg'} width={80} height={80} alt='product'/>
+          <Image src={'/images/product.jpg'} width={70} height={70} alt='product'/>
         </div>
         <div className='product-info'>
           <div className='name-more-info'>
@@ -59,7 +59,7 @@ const Main = ({ selectedProd, selectedCol, modalOpen, setModalOpen, setPanelOpen
         setPanelOpen(true)
         setSelectingProd('All Products');
       }}>
-        <span>ALL MAKEUP &nbsp;</span>
+        <span>ALL MAKEUP</span>
         <Image src={'/images/pullup.png'} width={20} height={20} alt='pull-up' />
       </div>
       {modalOpen

@@ -20,16 +20,14 @@ const PullUpPanel = ({ selectingProd, selectedProd, setSelectedProd, setSelectin
       })
     },
 
-    option: (provided, { isSelected }) => {
+    option: (provided, { isSelected, data }) => {
       return ({
         ...provided,
         cursor: 'pointer',
-        backgroundColor: isSelected ? '#F5FAFF' : '#fff',
-        color: '#000',
+        backgroundColor: isSelected ? '#878787' : '#fff',
+        color: isSelected ? '#fff' : '#000',
         fontSize: '14px',
-        '&:hover': {
-          backgroundColor: '#EBF4FA',
-        },
+        textIndent: data.value === 'All Products' ? '0px' : '12px',
       })
     },
   }

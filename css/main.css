@@ -10,15 +10,23 @@
   padding: 0;
 }
 
+
+
 .view {
   width: 100%;
-  max-width: 380px;
-  height: 480px;
+  max-width: 450px;
+  height: 495px;
   display: flex;
   position: relative;
   flex-direction: column;
   font-family: 'Gotham Book';
 
+}
+
+@media (min-width: 768px) {
+  .view {
+    width: 370px;
+  }
 }
 
 .header {
@@ -44,18 +52,18 @@
   cursor: pointer;
 }
 
-.image-2 {
+.image-X {
   right: 0px; 
 }
 
-.image-3 {
+.image-reset {
   right: 0px;
-  top: 30%; 
+  top: 37%; 
 }
 
-.image-4 {
+.image-compare {
   right: 0px;
-  top: 40%; 
+  top: 47%; 
 }
 
 .watermark {
@@ -74,6 +82,7 @@
   height: 28%;
   position: absolute;
   bottom: 45px;
+  
   display: flex;
 }
 
@@ -83,31 +92,37 @@
 
 .product-image > img {
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .product-info {
   flex: 10;
   display: flex;
   flex-direction: column;
+  max-width: 75%;
+  padding-right: 10px;
+
+
 }
 
 .name-more-info {
   flex: 4;
   display: flex;
   align-items: center;
-  padding-right: 5px;
+  justify-content: space-between;
 }
 
 .product-info-name {
-  flex: 7;
   font-size: 14px;
-  width: 60%;
+  width: 68%;
+  /* flex: 7; */
 }
 
 .more-info {
-  flex: 4;
+  /* flex: 3; */
   background-color: #ffa500;
-  height: 80%;
+  height: 64%;
+  width: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,22 +149,15 @@
 } */
 
 .horizontal-scroll {
-  width: 277px;
+  width: calc(100vw - 50px);
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   /* align-items: center; */
-  gap: 6px;
+  gap: 10px;
   overflow-x: auto;
 }
 
-/* .horizontal-scroll::-webkit-scrollbar {
-  opacity: 0.5; 
-}
-
-.horizontal-scroll:hover::-webkit-scrollbar {
-  opacity: 1;
-} */
 
 .no-color {
     width: 28px;
@@ -201,3 +209,6 @@
   cursor: pointer;
 }
 
+.pull-up > span {
+  margin-right: 5px;
+}
